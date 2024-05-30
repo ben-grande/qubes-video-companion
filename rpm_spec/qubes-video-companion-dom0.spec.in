@@ -19,6 +19,10 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 
 Requires:       gstreamer1-plugins-good
+## Fedora 37 doesn't have libayatana-appindicator-gtk3
+Requires:       libappindicator-gtk3
+Requires:       (dunst or notification-daemon)
+Requires:       libnotify
 
 %description
 Qubes Video Companion is a tool for securely streaming webcams and sharing

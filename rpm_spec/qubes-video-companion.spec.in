@@ -37,6 +37,9 @@ BuildArch:      noarch
 Requires:       gstreamer1-plugins-good
 Requires:       python3
 Requires:       v4l-utils
+Requires:       libayatana-appindicator-gtk3
+Requires:       (dunst or notification-daemon)
+Requires:       libnotify
 Requires:       qubes-video-companion-license
 
 %description sender
@@ -73,8 +76,10 @@ BuildArch:      noarch
 BuildRequires:  pandoc
 Requires:       gstreamer1-plugins-good
 Requires:       python3
-Requires:       qubes-video-companion-license
 Requires:       acl
+Requires:       (dunst or notification-daemon)
+Requires:       libnotify
+Requires:       qubes-video-companion-license
 
 %description receiver
 Qubes Video Companion is a tool for securely streaming webcams and sharing
